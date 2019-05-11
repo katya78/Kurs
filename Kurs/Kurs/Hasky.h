@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "DogBase.hpp"
 
 class Hasky : public DogBase {
@@ -7,7 +7,7 @@ public:
 		DogBase::read(in);
 	}
 	void print(std::ostream& out) {
-		out << "\nÏîðîäà: Õàñêè";
+		out << "\nÐŸÐ¾Ñ€Ð¾Ð´Ð°: Ð¥Ð°ÑÐºÐ¸";
 		DogBase::print(out);
 	}
 	void fread(std::istream& in) {

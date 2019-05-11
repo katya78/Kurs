@@ -1,46 +1,46 @@
-#include "DogBase.hpp"
+ï»¿#include "DogBase.hpp"
 
 void DogBase::read(std::istream& in) {
-	std::cout << "Êëè÷êà: ";
+	std::cout << "ÐšÐ»Ð¸Ñ‡ÐºÐ°: ";
 	in >> this->name;
-	std::cout << "Èìÿ âëàäåëüöà: ";
+	std::cout << "Ð˜Ð¼Ñ Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð°: ";
 	in >> this->owner;
-	std::cout << "Äàòà ðîæäåíèÿ: ";
+	std::cout << "Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
 	in >> this->birth_date;
-	std::cout << "Õàðàêòåð: ";
+	std::cout << "Ð¥Ð°Ñ€Ð°ÐºÑ‚ÐµÑ€: ";
 	in >> this->character;
-	std::cout << "Öâåò: ";
+	std::cout << "Ð¦Ð²ÐµÑ‚: ";
 	in >> this->color;
-	std::cout << "Íàçâàíèå ïèòîìíèêà: ";
+	std::cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¸Ñ‚Ð¾Ð¼Ð½Ð¸ÐºÐ°: ";
 	in >> this->home_name;
-	std::cout << "Ïîë(M/F): ";
+	std::cout << "ÐŸÐ¾Ð»(M/F): ";
 	std::string sex;
 	in >> sex;
 	this->is_male = sex == "M";
-	std::cout << "Ðàçìåðû: ";
+	std::cout << "Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹: ";
 	in >> this->size;
-	std::cout << "Îïèñàíèå: ";
+	std::cout << "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ: ";
 	in >> this->description;
 }
 
 void DogBase::print(std::ostream& out) {
-	out << "\nÊëè÷êà: ";
+	out << "\nÐšÐ»Ð¸Ñ‡ÐºÐ°: ";
 	out << this->name;
-	out << "\nÈìÿ âëàäåëüöà: ";
+	out << "\nÐ˜Ð¼Ñ Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð°: ";
 	out << this->owner;
-	out << "\nÄàòà ðîæäåíèÿ: ";
+	out << "\nÐ”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
 	out << this->birth_date;
-	out << "\nÕàðàêòåð: ";
+	out << "\nÐ¥Ð°Ñ€Ð°ÐºÑ‚ÐµÑ€: ";
 	out << this->character;
-	out << "\nÖâåò: ";
+	out << "\nÐ¦Ð²ÐµÑ‚: ";
 	out << this->color;
-	out << "\nÍàçâàíèå ïèòîìíèêà: ";
+	out << "\nÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¸Ñ‚Ð¾Ð¼Ð½Ð¸ÐºÐ°: ";
 	out << this->home_name;
-	out << "\nÏîë: ";
+	out << "\nÐŸÐ¾Ð»: ";
 	out << (this->is_male ? "M" : "F");
-	out << "\nÐàçìåðû: ";
+	out << "\nÐ Ð°Ð·Ð¼ÐµÑ€Ñ‹: ";
 	out << this->size;
-	out << "\nÎïèñàíèå: ";
+	out << "\nÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ: ";
 	out << this->description;
 }
 

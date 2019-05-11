@@ -1,4 +1,4 @@
-#include "Hasky.hpp"
+п»ї#include "Hasky.hpp"
 #include "HuaHua.hpp"
 #include "Labrador.hpp"
 #include "Pudel.hpp"
@@ -33,7 +33,7 @@ DogBase* getDog(const std::string& name) {
 }
 
 string ReadType() {
-	cout << "\n1. Спаниэль\n2. Пудель\n3. Чихуахуа\n4. Шнауцер\n5. Хаски\n6. Лабрадор\n";
+	cout << "\n1. РЎРїР°РЅРёСЌР»СЊ\n2. РџСѓРґРµР»СЊ\n3. Р§РёС…СѓР°С…СѓР°\n4. РЁРЅР°СѓС†РµСЂ\n5. РҐР°СЃРєРё\n6. Р›Р°Р±СЂР°РґРѕСЂ\n";
 	int a;
 	cin >> a;
 	switch (a) {
@@ -53,13 +53,13 @@ string ReadType() {
 }
 int main() {
 	setlocale(LC_ALL, "");
-	const int maxElements = 100; //максимальное кол-во элементов в массиве
+	const int maxElements = 100; //РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ
 	string temp;
 	int realSize = 0;
 	DogBase* dogs[maxElements];
 	while (true) {
 		system("cls");
-		cout << "1. Считать из консоли\n2. Считать из файла\n3. Очистить\n4. Вывести всё\n5. Записать в файл\n";
+		cout << "1. РЎС‡РёС‚Р°С‚СЊ РёР· РєРѕРЅСЃРѕР»Рё\n2. РЎС‡РёС‚Р°С‚СЊ РёР· С„Р°Р№Р»Р°\n3. РћС‡РёСЃС‚РёС‚СЊ\n4. Р’С‹РІРµСЃС‚Рё РІСЃС‘\n5. Р—Р°РїРёСЃР°С‚СЊ РІ С„Р°Р№Р»\n";
 		int a;
 		cin >> a;
 		if (a == 1) {
@@ -68,7 +68,7 @@ int main() {
 			realSize++;
 		}
 		else if (a == 2) {
-			cout << "Введите имя файла: ";
+			cout << "Р’РІРµРґРёС‚Рµ РёРјСЏ С„Р°Р№Р»Р°: ";
 			cin >> temp;
 			ifstream in(temp);
 			in >> temp;
@@ -88,10 +88,10 @@ int main() {
 			}
 		}
 		else if (a == 5) {
-			cout << "Введите индекс: ";
+			cout << "Р’РІРµРґРёС‚Рµ РёРЅРґРµРєСЃ: ";
 			int a;
 			cin >> a;
-			cout << "Введите название файла: ";
+			cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ С„Р°Р№Р»Р°: ";
 			cin >> temp;
 			dogs[a]->fprint(ofstream(temp));
 
