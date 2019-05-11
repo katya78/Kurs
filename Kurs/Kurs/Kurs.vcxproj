@@ -117,6 +117,7 @@
     <ClInclude Include="DogBase.h" />
     <ClInclude Include="Hasky.h" />
     <ClInclude Include="HuaHua.h" />
+    <ClInclude Include="Labrador.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
