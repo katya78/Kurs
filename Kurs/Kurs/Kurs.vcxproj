@@ -120,6 +120,7 @@
     <ClInclude Include="Labrador.h" />
     <ClInclude Include="Pudel.h" />
     <ClInclude Include="Sgnaucer.h" />
+    <ClInclude Include="Spaniel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

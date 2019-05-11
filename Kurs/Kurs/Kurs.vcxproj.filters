@@ -41,5 +41,8 @@
     <ClInclude Include="Sgnaucer.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="Spaniel.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
